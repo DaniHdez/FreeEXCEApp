@@ -9,6 +9,45 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Insertar nombre"
+        android:id="@+id/textView"
+        android:focusableInTouchMode="false"
+        android:typeface="sans"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base Station"
+        android:id="@+id/buttonBaseSt"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:id="@+id/buttonClient"
+        android:layout_below="@+id/buttonBaseSt"
+        android:layout_marginTop="59dp"
+        android:layout_alignEnd="@+id/buttonBaseSt"
+        android:layout_alignStart="@+id/buttonBaseSt"
+        android:textSize="20dp" />
 </RelativeLayout>

@@ -18,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BaseStationMenu" >
+        </activity>
+        <activity android:name=".ClientMenu" >
+        </activity>
+        <activity android:name=".MensajeBS" >
+        </activity>
+        <activity android:name=".MensajeCliente" >
+        </activity>
     </application>
 
 </manifest>
