@@ -25,7 +25,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/nombreText"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_marginTop="55dp" />
@@ -36,7 +36,7 @@
         android:text="Base Station"
         android:id="@+id/buttonBaseSt"
         android:layout_marginTop="59dp"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/nombreText"
         android:layout_centerHorizontal="true"
         android:textSize="20dp" />
 

@@ -9,8 +9,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    private Button botonBS;
+    private Button botonClient;
+    private EditText nombreText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,26 +24,54 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //Declaracion y acciones de los botones
+
+        nombreText = (EditText) findViewById(R.id.nombreText);
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Cerrar", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                System.exit(0);
             }
         });
-        findViewById(R.id.buttonBaseSt).setOnClickListener(new View.OnClickListener() {
+
+        botonBS = (Button)findViewById(R.id.buttonBaseSt);
+
+        botonBS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BaseStationMenu.class));
+                String texto = nombreText.getText().toString();
+                if(!texto.equals("")){
+                    startActivity(new Intent(MainActivity.this, BaseStationMenu.class));
+                }
+                else{
+                    Snackbar.make(v, "Debe insertar un nombre", Snackbar.LENGTH_SHORT)
+                    .setAction("Action",null).show();
+                }
+
             }
         });
-        findViewById(R.id.buttonClient).setOnClickListener(new View.OnClickListener() {
+
+        botonClient = (Button)findViewById(R.id.buttonClient);
+        botonClient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ClientMenu.class));
+                String texto = nombreText.getText().toString();
+                if(!texto.equals("")){
+                    startActivity(new Intent(MainActivity.this, ClientMenu.class));
+                }
+                else{
+                    Snackbar.make(v, "Debe insertar un nombre", Snackbar.LENGTH_SHORT)
+                            .setAction("Action",null).show();
+                }
             }
         });
+
+
+
     }
 
     @Override
