@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".MensajeCliente" >
         </activity>
+        <activity android:name=".EleccionBS" >
+        </activity>
     </application>
 
 </manifest>

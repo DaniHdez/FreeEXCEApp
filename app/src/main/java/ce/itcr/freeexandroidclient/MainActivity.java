@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String texto = nombreText.getText().toString();
                 if(!texto.equals("")){
-                    startActivity(new Intent(MainActivity.this, ClientMenu.class));
+                    startActivity(new Intent(MainActivity.this, EleccionBS.class));
                 }
                 else{
                     Snackbar.make(v, "Debe insertar un nombre", Snackbar.LENGTH_SHORT)

@@ -1,0 +1,13 @@
+package ce.itcr.freeexandroidclient;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class EleccionBS extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_eleccion_bs);
+    }
+}
