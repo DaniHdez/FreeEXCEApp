@@ -17,22 +17,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="51dp" />
 
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/BSlistView"
-        android:layout_below="@+id/textView6"
-        android:layout_marginTop="49dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="false" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Listo"
         android:id="@+id/buttonElBS"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/BSlistView" />
+        android:layout_alignParentBottom="true" />
 
 
 </RelativeLayout>
