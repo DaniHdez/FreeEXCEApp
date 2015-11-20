@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+/**
+ * Pantalla de Mensaje de Cliente
+ * @author Daniela Hernández
+ *
+ */
 
 public class MensajeCliente extends AppCompatActivity {
     private Button botonEnviarC;

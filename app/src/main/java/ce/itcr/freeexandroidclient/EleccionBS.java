@@ -7,6 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * Pantalla de Elección de Base Station del Cliente
+ * @author Daniela Hernández
+ *
+ */
+
 public class EleccionBS extends AppCompatActivity {
     private Button botonEBS;
 

@@ -12,6 +12,13 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 
+/**
+ * Pantalla de inicio
+ * @author Daniela Hernández
+ *
+ */
+
+
 public class MainActivity extends AppCompatActivity {
     private Button botonBS;
     private Button botonClient;

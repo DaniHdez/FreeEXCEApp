@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+/**
+ * Pantalla de MEnsaje del Base Station
+ * @author Daniela Hernández
+ *
+ */
 
 public class MensajeBS extends AppCompatActivity {
     private Button botonEnviarBS;

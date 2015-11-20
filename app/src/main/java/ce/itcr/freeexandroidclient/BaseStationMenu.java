@@ -6,6 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * Pantalla de Base Station
+ * @author Daniela Hernández
+ *
+ */
+
 public class BaseStationMenu extends AppCompatActivity {
     private Button botonNMsjBS;
     private Button botonrecibidosBS;
