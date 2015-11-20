@@ -44,4 +44,11 @@
         android:layout_toEndOf="@+id/textView2"
         android:layout_marginBottom="42dp" />
 
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DestBSlistview"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
