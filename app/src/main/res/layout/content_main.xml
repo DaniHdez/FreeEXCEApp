@@ -18,9 +18,9 @@
         android:focusableInTouchMode="false"
         android:typeface="sans"
         android:textSize="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp" />
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/btnActivate"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -50,4 +50,13 @@
         android:layout_alignEnd="@+id/buttonBaseSt"
         android:layout_alignStart="@+id/buttonBaseSt"
         android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/btnActivate"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

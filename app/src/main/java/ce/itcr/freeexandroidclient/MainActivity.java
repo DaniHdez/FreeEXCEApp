@@ -1,11 +1,16 @@
 package ce.itcr.freeexandroidclient;
 
+import android.bluetooth.BluetoothAdapter;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,7 +32,9 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity {
     private Button botonBS;
     private Button botonClient;
+    private Button botonBluetooth;
     private EditText nombreText;
+    private BluetoothAdapter bAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +89,29 @@ public class MainActivity extends AppCompatActivity {
                 else{
                     Snackbar.make(v, "Debe insertar un nombre", Snackbar.LENGTH_SHORT)
                             .setAction("Action",null).show();
+                }
+            }
+        });
+        botonBluetooth=(Button)findViewById(R.id.btnActivate);
+        bAdapter=BluetoothAdapter.getDefaultAdapter();
+        if(bAdapter.isEnabled()){
+            botonBluetooth.setText(R.string.DesactivarBluetooth);
+            botonBluetooth.setEnabled(true);
+        }
+        else{
+            botonBluetooth.setText(R.string.ActivarBluetooth);
+        }
+        botonBluetooth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(bAdapter.isEnabled()){
+                    botonBluetooth.setText(R.string.ActivarBluetooth);
+                    botonBluetooth.setEnabled(true);
+                    bAdapter.disable();
+                }
+                else{
+                    botonBluetooth.setText(R.string.DesactivarBluetooth);
+                    bAdapter.enable();
                 }
             }
         });
