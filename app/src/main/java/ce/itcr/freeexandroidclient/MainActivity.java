@@ -12,6 +12,11 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.gson.JsonObject;
+
+import org.json.JSONObject;
+
+
 /**
  * Pantalla de inicio
  * @author Daniela Hernández
@@ -52,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String texto = nombreText.getText().toString();
                 if(!texto.equals("")){
+                    JsonObject usuarioBS=new JsonObject();
+                    usuarioBS.addProperty("usuario", texto);
                     startActivity(new Intent(MainActivity.this, BaseStationMenu.class));
                 }
                 else{
@@ -68,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String texto = nombreText.getText().toString();
                 if(!texto.equals("")){
+                    JsonObject usuarioC=new JsonObject();
+                    usuarioC.addProperty("usuario",texto);
                     startActivity(new Intent(MainActivity.this, EleccionBS.class));
                 }
                 else{
