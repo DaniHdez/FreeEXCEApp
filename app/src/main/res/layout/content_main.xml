@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Insertar nombre"
-        android:id="@+id/textView"
+        android:id="@+id/InsertName"
         android:focusableInTouchMode="false"
         android:typeface="sans"
         android:textSize="30dp"
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/nombreText"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/InsertName"
         android:layout_alignParentStart="true"
         android:layout_marginTop="55dp" />
 
