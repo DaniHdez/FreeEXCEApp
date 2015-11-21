@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        //Boton para activar y desactivar bluetooth
         botonBluetooth=(Button)findViewById(R.id.btnActivate);
         bAdapter=BluetoothAdapter.getDefaultAdapter();
         if(bAdapter.isEnabled()){
@@ -115,9 +116,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
     }
 
     @Override
